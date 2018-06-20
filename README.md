@@ -13,13 +13,8 @@ This program is written in python specifically for OSX and tested on High Sierra
 ![Image](http://i.imgur.com/Zr9qkQs.jpg)
 
 ### The App
-- The application is split in the following ways:
-	- The checker app checks to ensure there is internet connectivity, then checks to see if an image file already exists in the ~/Pictures/bing-wallpaper folder.
-		- If there are files, it will check to see if the file was created today.
-			- If the file was created today, stop and don't do anything
-			- Else, run the app to download the wallpaper.
-		- If there are no files, run the app to download the wallpaper
-	- The wallpaper downloader app ensures that you only have the latest wallpaper in your folder. It makes sure to delete all files from that folder before downloading the new wallpaper.
+- The wallpaper downloader app ensures that you only have the latest wallpaper in your folder. It makes sure to delete all files from that folder before downloading the new wallpaper.
+- It also restarts your Dock so all Desktops get the new background image
 
 ### Plist File
 - Copy the plist file to `~/Library/LaunchAgents`
